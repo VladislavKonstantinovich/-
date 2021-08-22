@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d3d3d3;
+}
+
+.container {
+    max-width: 100%;
+    padding:  20px 100px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.confetti {
+    width: 250px;
+    position: absolute;
+    right: 40%;
+    top: 0px;
+    opacity: .5;
+}
+
+.info {
+    // position: relative;
+    max-width: 880px;
+    margin: 0 auto;
+
+    &__header {
+        display: flex;
+        align-items: center;
+
+        &__portrain {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        &__name {
+            margin-left: 20px;
+        }
+    }
+
+    &__main {
+        display: flex;
+        justify-content: space-around;
+
+        &__group {
+            display: flex;
+        }
+
+        &__part {
+            width: 1fr;
+            text-align: center;
+        }
+
+       /* &__date {
+            width: 1fr;
+            text-align: center;
+        }
+
+        &__city {
+            width: 1fr;
+            text-align: center;
+        }
+
+        &__education {
+            width: 1fr;
+            text-align: center;
+        }*/
+    }
+}
